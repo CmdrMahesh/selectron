@@ -31,7 +31,7 @@ class Publics {
 
 			foreach($sections as $section) {
 				
-				if(!empty(wbc()->options->get_option($key.'_'.$section['section'],$section['section'].'_render_method'))) {
+				/*if(!empty(wbc()->options->get_option($key.'_'.$section['section'],$section['section'].'_render_method'))) {*/
 
 					$handler = $section['handler_object'];
 					$default_action = $section['default_action'];
@@ -60,7 +60,7 @@ class Publics {
 							// halt execution
 					}
 
-				}
+				/*}*/
 
 			}
 
