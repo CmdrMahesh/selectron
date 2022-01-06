@@ -8,8 +8,7 @@
             "name": "CmdrMahesh",
             "email": "mahesh@emptyops.com"
         }
-    ],
-    "minimum-stability": "dev",
+    ],    
     "require": {},
     "autoload": {
         "psr-4": {
