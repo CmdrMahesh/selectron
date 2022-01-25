@@ -36,6 +36,7 @@ class Publics {
 					$handler = $section['handler_object'];
 					$default_action = $section['default_action'];
 
+
 					switch(wbc()->options->get_option($key,$section['section'].'_render_method')) {
 						case 'add_filter':
 													
@@ -48,6 +49,7 @@ class Publics {
 						
 						case 'query_selector':						
 							
+
 							call_user_func_array(array($handler,'js_render'),array(wbc()->options->get_option($key,$section['section'].'_query_string'),wbc()->options->get_option($key,$section['section'].'_query_delay')));
 							
 							break;
