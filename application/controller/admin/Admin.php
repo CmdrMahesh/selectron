@@ -19,7 +19,13 @@ class Admin {
 		
 	}
 	
-	public function add_tab(string $key = '',array $section=array(), $tab = array()) {
+	public static function add_tab(string $key = '',array $section=array(), $tab = array()) {
+
+		/*
+		*	$key : key to the configurations
+		*	$section : list of sections { 'key' => 'Label'}
+		*	$tab : the form defination
+		*/
 
 		add_action('admin_footer',function(){
 			?>
