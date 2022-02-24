@@ -152,6 +152,27 @@ class Admin {
 						'class'=>array('fluid', 'small'),
 						'size_class'=>array('sixteen','wide'),
 					),
+				);
+
+				$section_data[$section_key.'_query_location'] = array(
+
+					'label'=>'Position - '.$section_name,
+					'type'=>'select',
+					'value'=>array('after'),
+					'options'=> array(
+                        'after'=>'After',
+                        'before'=>'Before',
+                        'replaceWith'=>'Replace',
+                        'append'=>'Append',
+                        'prepend'=>'Prepend',
+                    ),
+					'sanitize'=>'sanitize_text_field',
+					'size_class'=>array($section_key.'_query_method'),
+					'visible_info'=>array( 'label'=>'( Delay the JS execution. )',
+						'type'=>'visible_info',
+						'class'=>array('fluid', 'small'),
+						'size_class'=>array('sixteen','wide'),
+					),
 				);				
 			}
 

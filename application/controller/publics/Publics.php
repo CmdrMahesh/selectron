@@ -49,8 +49,9 @@ class Publics {
 						
 						case 'query_selector':						
 							
+							$position = wbc()->options->get_option($key,$section['section'].'_query_location','after',false,true);
 
-							call_user_func_array(array($handler,'js_render'),array(wbc()->options->get_option($key,$section['section'].'_query_string'),wbc()->options->get_option($key,$section['section'].'_query_delay')));
+							call_user_func_array(array($handler,'js_render'),array(wbc()->options->get_option($key,$section['section'].'_query_string'),wbc()->options->get_option($key,$section['section'].'_query_delay'),$position));
 							
 							break;
 						default:
