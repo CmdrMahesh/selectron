@@ -79,7 +79,7 @@ class Admin {
 					'value'=>'add_filter',
 					'validate'=>array('required'=>''),
 					'sanitize'=>'sanitize_text_field',
-					'options'=>array('add_filter'=>'Wordpress Filter','add_action'=>'Wordpress Action','query_selector'=>'JS Query Seclector'),							
+					'options'=>array('add_filter'=>'Wordpress Filter','add_action'=>'Wordpress Action','query_selector'=>'JS Query Selector'),							
 					'class'=>array(),										
 					'size_class'=>array('required',$section_key.'_render_method'),
 					'visible_info'=>array( 'label'=>'( Set the selector type to render the DOM. )',
