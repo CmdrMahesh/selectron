@@ -4,4 +4,7 @@
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
+// TODO temp 
+require_once dirname(dirname(__FILE__)) . '/application/controller/publics/container/container.php';
+
 return ComposerAutoloaderInit3133ebb019418bfcf7b9093b18516c84::getLoader();
